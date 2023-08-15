@@ -1,0 +1,164 @@
+.card {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  min-height: 231px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card__photo {
+  height: 201px;
+  width: 100%;
+  background-image: url(../../images/movie1.png);
+  display: block;
+  object-fit: cover;
+}
+
+.card__container {
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  padding: 14px 14px;
+  display: block;
+}
+
+.card__info {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  overflow: hidden;
+}
+
+.card__time {
+  width: 44px;
+  height: 18px;
+  background-color: #F9F9F9;
+  color: #A0A0A0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.card__save {
+  width: 72px;
+  height: 21px;
+  visibility: hidden;
+  background-color: #F9F9F9;
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  font-size: 10px;
+  line-height: 9px;
+  font-weight: 400;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  transition: .5s;
+}
+
+.card:hover .card__save {
+  visibility: visible;
+}
+
+.card__save:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.card__saved {
+  width: 21px;
+  height: 21px;
+  background-color: #FF4062;
+  background-image: url(../../images/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  padding: 0;
+  transition: .2s;
+  color: transparent
+}
+
+.card__saved:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.card__delete {
+  visibility: hidden;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: #F9F9F9;
+  background-image: url(../../images/delete.svg);
+  background-size: 8px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.card:hover .card__delete {
+  visibility: visible;
+}
+
+.card__delete:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1022px) {
+  .card {
+    width: 339px;
+    height: 247px;
+    border-radius: 10px;
+  }
+
+  .card__container {
+    padding: 25px 0 14px 0;
+  }
+
+  .card__photo {
+    width: 339px;
+    height: 190px;
+  }
+
+  .card__time {
+    width: 44px;
+    height: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 300px;
+    height: 235px;    
+  }
+
+  .movies-card__photo {
+    width: 300px;
+    height: 168px;
+  }
+  .card__delete {
+    right: 10px;
+    top: 10px;
+  }
+}

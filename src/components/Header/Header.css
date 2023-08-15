@@ -1,0 +1,30 @@
+.header {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 18px 70px 18px;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.header_theme_light {
+  background-color: #FFFFFF;
+}
+.header_theme_pink {
+  background-color: #F3C1F8;
+}
+
+.header__logo {
+  width: 38px;
+  height: 38px;
+  background: url(../../images/header__logo.svg) no-repeat center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 18px 14px;
+  }
+}
