@@ -16,6 +16,7 @@ export default function Login() {
         <input
           className="auth__input"
           type="email"
+          placeholder="Введите e-mail"
           required>
         </input>
         <span className="auth__error"></span>
@@ -25,6 +26,7 @@ export default function Login() {
         <input
           className="auth__input"
           type="password"
+          placeholder="Введите пароль"
           required>
         </input>
         <span className="auth__error"></span>

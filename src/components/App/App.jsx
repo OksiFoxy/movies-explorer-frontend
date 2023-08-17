@@ -14,48 +14,49 @@ import Login from '../Login/Login';
 import NotFound from '../NotFound/NotFound';
 import SearchForm from "../SearchForm/SearchForm";
 
-function App () {
+function App() {
   const [isLanding, setisLanding] = useState(false);
 
   return (
     <div className="app">
-        <Routes>
-          <Route path="/" element={
-              <>
-                <Header isLanding={isLanding} />
-                <Main />
-                <Footer />
-              </>
-            } 
-          />
-          <Route path="/movies" element={
-              <>
-                <Header isLanding={!isLanding} />
-                <SearchForm />
-                <Movies />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/saved-movies" element={
-              <>
-                <Header isLanding={!isLanding} />
-                <SearchForm />
-                <SavedMovies />
-              </>
-            }
-          />
-          <Route path="/profile" element={
-              <>
-                <Header isLanding={!isLanding} />
-                <Profile />
-              </>
-            }
-          />
-          <Route path="/signup" element={<Register />} />
-          <Route path="/signin" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Header isLanding={isLanding} />
+            <Main />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/movies" element={
+          <>
+            <Header isLanding={!isLanding} />
+            <SearchForm />
+            <Movies />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/saved-movies" element={
+          <>
+            <Header isLanding={!isLanding} />
+            <SearchForm />
+            <SavedMovies />
+            <Footer />
+          </>
+        }
+        />
+        <Route path="/profile" element={
+          <>
+            <Header isLanding={!isLanding} />
+            <Profile />
+          </>
+        }
+        />
+        <Route path="/signup" element={<Register />} />
+        <Route path="/signin" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }

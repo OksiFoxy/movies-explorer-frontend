@@ -1,5 +1,5 @@
 .footer {
-	padding: 90px 70px 20px;
+	padding: 79px 70px 20px;
 }
 
 .footer__title {
@@ -72,7 +72,7 @@
 	}
 
 	.footer__info {
-    margin-top: 30px;
+    margin-top: 25px;
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;

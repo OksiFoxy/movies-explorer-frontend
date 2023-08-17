@@ -1,5 +1,6 @@
 .profile {
-  margin: 0 auto;
+  max-width: 410px;
+  margin: 0 auto 70px;
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
@@ -12,6 +13,9 @@
   font-size: 24px;
   line-height: auto;
   font-weight: 500;
+
+  font-weight: 400;
+  text-align: center;
 }
 
 .profile__form {
@@ -23,7 +27,7 @@
   background-color: #FFFFFF;
 }
 
-.profile__input-container {
+.profile__input_container {
   display: flex;
   justify-content: space-between;
 }
@@ -32,15 +36,16 @@
   width: 141px;
   font-size: 11px;
   font-weight: 500;
-  line-height: 13px;
+  line-height: 14px;
   align-self: center;
 }
 
 .profile__input {
+  width: 250px;
   padding: 0;
   font-size: 11px;
   font-weight: 400;
-  line-height: 13px;
+  line-height: 14px;
   text-align: right;
   border: 0;
 }
@@ -50,13 +55,13 @@
 }
 
 .profile__input::placeholder {
-  color: #000000;
+  color: #a0a0a0;
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
 }
 
-.profile__input-container:last-of-type {
+.profile__input_container:last-of-type {
   margin-bottom: 220px;
 }
 
@@ -81,7 +86,7 @@
   cursor: pointer;
 }
 
-.profile__logout-btn {
+.profile__logout_btn {
   display: block;
   max-width: 410px;
   padding: 0;
@@ -96,7 +101,7 @@
   text-decoration: none;
 }
 
-.profile__logout-btn:hover {
+.profile__logout_btn:hover {
   opacity: 0.7;
 }
 
@@ -110,7 +115,7 @@
     padding-top: 96px;
   }
 
-  .profile__input-container:last-of-type {
+  .profile__input_container:last-of-type {
     margin-bottom: 210px;
   }
 
@@ -127,8 +132,15 @@
     padding-top: 80px;
   }
 
-  .profile__input-container:last-of-type {
+  .profile__input_container:last-of-type {
     margin-bottom: 379px;
   }
 
+  .profile__submit {
+    font-size: 12px;
+  }
+
+  .profile__logout_btn {
+    font-size: 12px;
+  }
 }

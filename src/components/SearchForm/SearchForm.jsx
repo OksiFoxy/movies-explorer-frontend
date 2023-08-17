@@ -2,30 +2,31 @@ import "./SearchForm.css";
 
 export default function SearchForm() {
   return (
-    <section>
-      <form className="searchform">
-        <div className="searchform__container">
-          <div className="searchform__icon"></div>
-          <div className="searchform__input-container">
-            <input
-              type="text"
-              className="searchform__input"
-              placeholder="Фильм"
-              name="search"
-              required
-            />
-            <button type="submit" className="searchform__button-submit">
-              Найти
-            </button>
+    <section className="searchform">
+      <form className="searchform__form">
+        <span className="searchform__form_icon"></span>
+        <div className="searchform__form_input-container">
+          <input
+            type="text"
+            className="searchform__input"
+            placeholder="Фильм"
+            name="search"
+            required
+          />
+          <span className="searchform__error">Что то не так</span>
+          <button type="submit" className="searchform__submit">
+            Найти
+          </button>
+        </div>
+        <div className="searchform__vertline"></div>
+        <div className="searchform__switch">
+          <div>
+            <label className="searchform__switch_checkbox">
+              <input className="searchform__switch_input" type="checkbox" />
+              <span className="searchform__switch_slider"></span>
+            </label>
           </div>
-          <div className="searchform__vertical-line"></div>
-          <div className="searchform__shorts-container">
-              <label className="searchform__switch-box">
-                <input className="searchform__switch_input" type="checkbox" />
-                <span className="searchform__switch_slider"></span>
-              </label>
-            <span className="searchform__shorts-text">Короткометражки</span>
-          </div>
+          <span className="searchform__switch-text">Короткометражки</span>
         </div>
       </form>
       <div className="searchform__line"></div>

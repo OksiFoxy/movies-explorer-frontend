@@ -15,32 +15,32 @@ export default function Register() {
           Имя
         </label>
         <input
-            className="register__input"
-            type="Имя"
-            placeholder="Оксана"
-            required />
+          className="register__input"
+          type="Имя"
+          placeholder="Введите имя"
+          required />
         <span className="register__error"></span>
         <label className="register__input-label">
           E-mail
         </label>
         <input
-            className="register__input"
-            type="email"
-            placeholder="pochta@yandex.ru"
-            required>
-          </input>
+          className="register__input"
+          type="email"
+          placeholder="Введите e-mail"
+          required>
+        </input>
         <span className="register__error"></span>
         <label className="register__input-label">
           Пароль
         </label>
         <input
-            className="register__input"
-            type="password"
-            placeholder="Пароль"
-            required
+          className="register__input"
+          type="password"
+          placeholder="Введите пароль"
+          required
         />
         <span className="register__error">Что-то пошло не так...</span>
-        
+
         <button className="register__submit">Зарегистрироваться</button>
       </form>
       <p className="register__text">Уже зарегистрированы?

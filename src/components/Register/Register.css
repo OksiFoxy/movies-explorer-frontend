@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 70px;
 }
 
 .register__logo-link {
@@ -60,7 +61,7 @@
 }
 
 .register__input::placeholder {
-  color: #000000;
+  color: #a0a0a0;
   font-size: 13px;
   font-weight: 500;
 }
@@ -81,7 +82,7 @@
   border-radius: 3px;
   color: #fff;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 

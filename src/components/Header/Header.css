@@ -1,10 +1,8 @@
 .header {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 18px 70px 18px;
-  font-style: normal;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
+  min-height: 38px;
+  padding: 18px 70px;
   align-items: center;
   border: none;
 }
@@ -12,18 +10,27 @@
 .header_theme_light {
   background-color: #FFFFFF;
 }
+
 .header_theme_pink {
   background-color: #F3C1F8;
 }
 
 .header__logo {
+  margin: auto;
   width: 38px;
   height: 38px;
-  background: url(../../images/header__logo.svg) no-repeat center;
+  background-image: url(../../images/header__logo.svg);
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .header {
+    min-height: 38px;
+    padding: 18px 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .header {
     padding: 18px 14px;
   }
