@@ -5,13 +5,13 @@ function AboutMe() {
   return (
     <section className="about-me" id="student">
       <h2 className="about-me__title">Студент</h2>
-      <div className="about-me__line"></div>
-      <div className="about-me__container">
+      <span className="about-me__line"></span>
+      <div className="about-me__info-container">
         <div className="about-me__info">
           <div className="about-me__info-text">
-            <h3 className="about-me__name">Оксана</h3>
-            <p className="about-me__subtitle">Фронтенд-разработчик, 33 года</p>
-            <p className="about-me__story">
+            <h3 className="about-me__info-name">Оксана</h3>
+            <p className="about-me__info-subtitle">Фронтенд-разработчик, 33 года</p>
+            <p className="about-me__info-story">
               Я Оксана, родилась и почти всю жизнь жила в городе Новосибирск
               и 3 года назад переехала в Москву. Я Оксана, родилась и почти всю жизнь жила в городе Новосибирск
               и 3 года назад переехала в Москву. Я Оксана, родилась и почти всю жизнь жила в городе Новосибирск

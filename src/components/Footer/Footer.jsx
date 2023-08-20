@@ -8,7 +8,7 @@ export default function Footer() {
       </h2>
       <div className="footer__info">
         <span className="footer__copyright">&copy;2023</span>
-        <ul className="footer__list">
+        <ul className="footer__links">
           <li>
             <a className="footer__link" href="https://practicum.yandex.ru/" target="blank">Яндекс.Практикум</a>
           </li>

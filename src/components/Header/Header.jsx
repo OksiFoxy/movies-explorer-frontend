@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export default function Header({ isLanding }) {
   return (
-    <div>
       <header
         className={`header 
         ${!isLanding ? "header_theme_pink" : "header_theme_light"}`}>
@@ -13,6 +12,5 @@ export default function Header({ isLanding }) {
         </Link>
         <Navigation isLanding={isLanding} />
       </header>
-    </div>
   );
 }
