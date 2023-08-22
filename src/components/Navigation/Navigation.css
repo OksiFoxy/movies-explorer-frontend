@@ -15,6 +15,10 @@
   margin: 0;
 }
 
+.navigation__link-type-register {
+  padding-right: 10px;
+}
+
 .navigation__link-movies {
   font-size: 14px;
   line-height: 16px;
@@ -73,6 +77,10 @@
 @media screen and (max-width: 1023px) {
   .navigation {
     gap: 30px;
+  }
+
+  .navigation__link-type-register {
+    padding-right: 0;
   }
 
   .navigation__mob-menu-icon {

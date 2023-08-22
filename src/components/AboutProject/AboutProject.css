@@ -130,6 +130,10 @@
       padding: 70px 18px 60px;
    }
 
+   .about-project__title {
+     font-size: 18px;
+   }
+
    .about-project__week-description {
       height: 33px;
    }

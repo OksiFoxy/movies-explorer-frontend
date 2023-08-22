@@ -12,7 +12,6 @@ import Profile from '../Profile/Profile';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import NotFound from '../NotFound/NotFound';
-import SearchForm from "../SearchForm/SearchForm";
 
 function App() {
   const [isLanding, setisLanding] = useState(false);
@@ -31,7 +30,6 @@ function App() {
         <Route path="/movies" element={
           <>
             <Header isLanding={!isLanding} />
-            <SearchForm />
             <Movies />
             <Footer />
           </>
@@ -40,7 +38,6 @@ function App() {
         <Route path="/saved-movies" element={
           <>
             <Header isLanding={!isLanding} />
-            <SearchForm />
             <SavedMovies />
             <Footer />
           </>

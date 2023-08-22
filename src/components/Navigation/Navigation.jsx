@@ -16,7 +16,7 @@ function Navigation({ isLanding }) {
         <nav className="navigation">
           <Link
             to="/signup"
-            className="navigation__link"
+            className="navigation__link navigation__link-type-register"
           >
             Регистрация
           </Link>

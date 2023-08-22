@@ -16,20 +16,13 @@
   object-fit: cover;
 }
 
-.card__container {
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  padding: 14px 14px;
-  display: block;
-}
-
 .card__info {
   background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+  padding: 14px 14px;
 }
 
 .card__title {
@@ -131,7 +124,7 @@
     border-radius: 10px;
   }
 
-  .card__container {
+  .card__info {
     padding: 25px 0 14px 0;
   }
 
@@ -163,7 +156,7 @@
     top: 10px;
   }
 
-  .card__container {
+  .card__info {
     padding: 16px 0 0;
   }
 }
