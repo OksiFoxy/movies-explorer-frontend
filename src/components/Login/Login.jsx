@@ -1,7 +1,23 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import "./Login.css";
 
-export default function Login() {
+export default function Login({ onLogin }) {
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handlePasswordInput = event => {
+    setPassword(event.target.value);
+  };
+
+  const handleEmailInput = event => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    onLogin(email, password);
+  };
 
   return (
     <main>
@@ -10,7 +26,7 @@ export default function Login() {
           <div className="auth__logo"></div>
         </Link>
         <h3 className="auth__title">Рады видеть!</h3>
-        <form className="auth__form">
+        <form className="auth__form" onSubmit={handleSubmit}>
           <label className="auth__input-label">
             E-mail
           </label>
@@ -18,6 +34,7 @@ export default function Login() {
             className="auth__input"
             type="email"
             placeholder="Введите e-mail"
+            onChange={handleEmailInput}
             required>
           </input>
           <span className="auth__error"></span>
@@ -28,6 +45,7 @@ export default function Login() {
             className="auth__input"
             type="password"
             placeholder="Введите пароль"
+            onChange={handlePasswordInput}
             required>
           </input>
           <span className="auth__error"></span>
